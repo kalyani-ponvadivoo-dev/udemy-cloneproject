@@ -43,7 +43,7 @@ body {
 
 .navbar-section2 input{
     border: none;
-    width: 100;
+    width: 100%;
     font-size: 1.5rem;             ;
 }
 .navbar-section2 input:focus{
@@ -55,6 +55,9 @@ body {
     gap:10px;
     align-items: center;
 
+}
+.navbar-section4{
+    display: none;
 }
 .mylearning{
     position: relative;
@@ -205,4 +208,39 @@ animation-fill-mode: forwards;
     display: flex;
     align-items: center;
     gap: 20px;
+}
+/*Media Queries*/
+@media screen and (max-width:800px){
+    body{
+        font-size: 10px;
+    }
+    /*popular courses image*/
+    .popular_container > div {
+        width: 48%;
+    }
+
+    .popular_container img {
+        width: 100%;
+        height: auto;
+    }
+    /*trendinng courses image*/
+     .trending_container > div {
+        width: 48%;
+    }
+
+    .trending_container img {
+        width: 100%;
+        height: auto;
+    }
+    .categories{
+        display: none;
+    }
+    .navbar-section3{
+        display: none;
+
+    }
+    .navbar-section4{
+        display: block;
+        
+    }
 }
